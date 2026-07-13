@@ -1,18 +1,39 @@
-class Swiggy {
+class Swiggy{
 
-    public static void createAccount(String fullName,long mobileNumber,String email,String password,String deliveryAddress,String referralCode) {
+    public static double search(String item){
+	
+	   double price = 0.0;
+	   
+	   if(item == "Pizza"){
+		   
+		   price = 69.00;
+		  
+	   }else if(item == "Burger"){
+		   
+		   price = 119.00;
+		   
+	   }else if(item == "Mushroom Biryani"){
+		   
+		   price = 280.00;
+		   
+	    }else if(item == "Sandwitch"){
+			
+			price = 65.00;
+			
+		}
+		
+		return price;
+		
+	}
+	
+	   public static void main(String[] args){
+		   
+		  String itemName = "Mushroom Biryani";
+		  
+		  double price = search(itemName);
+		  
+		  System.out.println("The price of " + itemName + " is " + price);
 
-        System.out.println("Full Name: " + fullName);
-        System.out.println("Mobile Number: " + mobileNumber);
-        System.out.println("Email: " + email);
-        System.out.println("Password: " + password);
-        System.out.println("Delivery Address: " + deliveryAddress);
-        System.out.println("Referral Code: " + referralCode);
-    }
-
-    public static void main(String[] args) {
-
-        createAccount("Pallavi K T",9876543210L,"pallavi@gmail.com","Swiggy@123","Bengaluru","SWG100");
-
-    }
+	    } 
+		
 }

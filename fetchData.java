@@ -2,13 +2,13 @@ class Watch{
 	
 	public static String fetchBrand(){
 		
-		return "boAt";
+		return boAt;
 		
 	}
 	
 	public static String fetchmodelName(){
 		
-		return "Lunar";
+		return Lunar;
 		
 	}
 	
@@ -20,7 +20,7 @@ class Watch{
 	
 	public static String fetchshape(){
 		
-		return "Rectangular";
+		return Rectangular;
 		
 	}
 	
@@ -28,13 +28,9 @@ class Watch{
 		
 		String brand = fetchBrand();
 		String model = fetchmodelName();
-		int chargeTime = fetchbatteryChargeTime();
+		String chargeTime = fetchbatteryChargeTime();
 		String shape = fetchshape();
 		
-		System.out.println("Brand is: " +brand);
-		System.out.println("Model is: " +model);
-		System.out.println("Charge Timings: " +chargeTime);
-		System.out.println("Shape is: " +shape);
 	}
 	
 }
