@@ -1,71 +1,19 @@
 class Hotel{
-	
-	  static String hotelName = "MTR (Mavalli Tiffin Rooms), Bengaluru";
- 
-     public static void main(String[] hotel){
+	//variable(refName) declation
+	//static variable(refName)
+  static String hotelName;
+static String hotelAddress;
+static long contactNo;
+
+   public static void main(String[] args){   //main method
+	   // variable(refName) initialization
+	   //local variable(refName)
+	   hotelName="Karunadu";
+	 System.out.println("Hotel name is"+hotelName);
+	 System.out.println("Hotel address is"+hotelAddress);
+	 System.out.println("Please Contact Us at"+contactNo);
+      String norofItems="4";
+	 System.out.println("Total nor of Items "+norofItems);
+    }
 	 
-			 String menu[] = {"Idli",
-			"Vada",
-			"Plain Dosa",
-			"Masala Dosa",
-			"Rava Dosa",
-			"Set Dosa",
-			"Onion Dosa",
-			"Paper Dosa",
-			"Neer Dosa",
-			"Poori",
-			"Chapati",
-			"Parotta",
-			"Veg Fried Rice",
-			"Jeera Rice",
-			"Pulav",
-			"Vegetable Biryani",
-			"Tomato Bath",
-			"Bisibele Bath",
-			"Khara Bath",
-			"Kesari Bath",
-			"Curd Rice",
-			"Lemon Rice",
-			"Puliyogare",
-			"Meals",
-			"South Indian Meals",
-			"North Indian Meals",
-			"Mini Meals",
-			"Paneer Butter Masala",
-			"Palak Paneer",
-			"Mushroom Curry",
-			"Veg Korma",
-			"Dal Fry",
-			"Dal Tadka",
-			"Sambar",
-			"Rasam",
-			"Curd",
-			"Gobi Manchurian",
-			"Baby Corn Manchurian",
-			"Veg Noodles",
-			"Veg Manchow Soup",
-			"Tomato Soup",
-			"Sweet Corn Soup",
-			"Ice Cream",
-			"Gulab Jamun",
-			"Rasgulla",
-			"Badam Halwa",
-			"Tea",
-			"Coffee",
-			"Badam Milk",
-			"Lassi",
-			"Fresh Lime Juice"};
-			
-			System.out.println("Hotel Name : " + hotelName);
-			
-			System.out.println(" ");
-
-			System.out.println("Menu:");
-
-			for (String item : menu) {
-				System.out.println(item);
-			}
-		
-		}
-		
 }
