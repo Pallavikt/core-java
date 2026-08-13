@@ -2,26 +2,83 @@ class ThinkPadRunner {
 
     public static void main(String[] args) {
 
-        ThinkPad laptop1 = new ThinkPad(
-            "Lenovo", "ThinkPad E14", "Intel Core i5",
-            16, 512, 65000, "14 inch FHD",
-            "Windows 11", "Black", false
+        ThinkPad thinkPad1 = new ThinkPad();
+
+        ThinkPad thinkPad2 = new ThinkPad(
+                "Lenovo"
         );
 
-        ThinkPad laptop2 = new ThinkPad(
-            "Lenovo", "ThinkPad T14", "Intel Core i7",
-            16, 1024, 95000, "14 inch WUXGA",
-            "Windows 11", "Black", false
+        ThinkPad thinkPad3 = new ThinkPad(
+                "Lenovo", "ThinkPad E14"
         );
 
-        ThinkPad laptop3 = new ThinkPad(
-            "Lenovo", "ThinkPad X1 Carbon", "Intel Core i7",
-            32, 1024, 135000, "14 inch OLED",
-            "Windows 11", "Black", true
+        ThinkPad thinkPad4 = new ThinkPad(
+                "Lenovo", "ThinkPad E14",
+                "Intel Core i5"
         );
 
-        laptop1.displayInfo();
-        laptop2.displayInfo();
-        laptop3.displayInfo();
+        ThinkPad thinkPad5 = new ThinkPad(
+                "Lenovo", "ThinkPad E14",
+                "Intel Core i5", 16
+        );
+
+        ThinkPad thinkPad6 = new ThinkPad(
+                "Lenovo", "ThinkPad E14",
+                "Intel Core i5", 16, 512
+        );
+
+        ThinkPad thinkPad7 = new ThinkPad(
+                "Lenovo", "ThinkPad E14",
+                "Intel Core i5", 16, 512,
+                65000
+        );
+
+        ThinkPad thinkPad8 = new ThinkPad(
+                "Lenovo", "ThinkPad E14",
+                "Intel Core i5", 16, 512,
+                65000, "14 inch"
+        );
+
+        ThinkPad thinkPad9 = new ThinkPad(
+                "Lenovo", "ThinkPad E14",
+                "Intel Core i5", 16, 512,
+                65000, "14 inch", "Windows 11"
+        );
+
+        ThinkPad thinkPad10 = new ThinkPad(
+                "Lenovo", "ThinkPad E14",
+                "Intel Core i5", 16, 512,
+                65000, "14 inch", "Windows 11",
+                "Black"
+        );
+
+        ThinkPad thinkPad11 = new ThinkPad(
+                "Lenovo", "ThinkPad E14",
+                "Intel Core i5", 16, 512,
+                65000, "14 inch", "Windows 11",
+                "Black", false
+        );
+
+        ThinkPad thinkPad12 = new ThinkPad(
+                "Lenovo", "ThinkPad E14",
+                "Intel Core i5", 16, 512,
+                65000, "14 inch", "Windows 11",
+                "Black", false, 10
+        );
+
+
+        thinkPad1.displayInfo();
+        thinkPad2.displayInfo();
+        thinkPad3.displayInfo();
+        thinkPad4.displayInfo();
+        thinkPad5.displayInfo();
+        thinkPad6.displayInfo();
+        thinkPad7.displayInfo();
+        thinkPad8.displayInfo();
+        thinkPad9.displayInfo();
+        thinkPad10.displayInfo();
+        thinkPad11.displayInfo();
+        thinkPad12.displayInfo();
+
     }
 }
